@@ -8,7 +8,10 @@ fn main() {
     let args: Vec<String> = env::args().collect();
 
     match validate_args(args) {
-        Ok((src, dst)) => process_file(src, dst),
+        Ok((src, dst)) => match process_file(src, dst) {
+            Ok(_) => (),
+            Err(e) => panic!("{}", e)
+        }
         Err(e) => panic!("{}", e),
     }
 }
