@@ -15,6 +15,6 @@ pub fn validate_args(args: Vec<String>) -> Result<(String, String), String> {
     Ok((src_path.to_string(), dst_path.to_string()))
 }
 
-pub fn path_exists(path: &str) -> bool {
+fn path_exists(path: &str) -> bool {
     Path::new(path).exists()
 }
