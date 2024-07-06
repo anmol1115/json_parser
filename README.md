@@ -1,3 +1,7 @@
+# Problem
+**This is work in progress.** Since all there are at a time 4 threads processing a chunk each, it could happen that these chunks are received at the receiver in a random manner hence corrupting the data.
+
+---
 # Usage
 - Build the release version of code using
 ```console
