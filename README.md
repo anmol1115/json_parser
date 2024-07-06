@@ -20,8 +20,10 @@ I have timed this code using two tools
 ![hyperfine result](https://github.com/anmol1115/json_parser/blob/master/hyperfine_res.png)
 
 ## Validation
-Because of the file sizes it is impossible to compare each line manually, I used two command line tools to validate the result.
+Because of the file sizes it is impossible to compare each line manually, I used three command line tools to validate the result.
 - grep: grep is used to search the file for occurances of the query string. We can see 4 lines in the input file where ';' is present and 0 in the output file.
 ![grep result](https://github.com/anmol1115/json_parser/blob/master/grep_res.png)
 - wc: wc is a tool used to check the number of lines in a file. Here we can see both input and output have same number of lines.
 ![wc result](https://github.com/anmol1115/json_parser/blob/master/wc_res.png)
+- diff: diff is a command line tool to compare files.
+![diff result](https://github.com/anmol1115/json_parser/blob/master/diff_res.png)
